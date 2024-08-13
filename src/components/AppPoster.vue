@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/require-v-for-key -->
-
 <template>
   <div class="poster__main">
     <div class="poster poster__hover container" v-for="movie in movies" :key="movie.id">
