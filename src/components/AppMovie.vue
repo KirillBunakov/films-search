@@ -31,7 +31,6 @@
     </div>
     <loader
     v-if="loader"></loader>
-    <h2>{{ current.frames }}</h2>
   </div>
 </template>
 
