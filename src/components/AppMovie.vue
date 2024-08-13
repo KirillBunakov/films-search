@@ -18,7 +18,7 @@
     </div>
     <div class="poster container" v-if="current">
       <div class="poster__logo">
-        <img src="" alt="logo">
+        <img :src="current.frames[0]" alt="logo" v-if="current.frames">
       </div>
       <div class="poster__content">
         <h3 class="poster__title">{{ current.title }}</h3>
@@ -31,6 +31,7 @@
     </div>
     <loader
     v-if="loader"></loader>
+    <h2>{{ current.frames }}</h2>
   </div>
 </template>
 

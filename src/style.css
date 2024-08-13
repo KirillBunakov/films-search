@@ -24,6 +24,9 @@
   align-items: center;
   justify-content: center;
 }
+.poster__logo img {
+  width: 112px;
+}
 .poster__content {
   background-color: rgba(77, 71, 71, 0.9803921569);
   width: 100%;

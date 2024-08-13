@@ -23,6 +23,10 @@
     align-items: center;
     justify-content: center;
   }
+  &__logo img{
+    width: 112px;
+    // height: 50px;
+  }
   &__content{
     background-color: #4D4747FA;
     width: 100%;

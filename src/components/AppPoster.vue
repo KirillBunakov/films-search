@@ -2,7 +2,7 @@
   <div class="poster__main">
     <div class="poster poster__hover container" v-for="movie in movies" :key="movie.id">
       <div class="poster__logo">
-        <img src="" alt="logo">
+        <img :src="movie.frames[0]" alt="logo" v-if="movie.frames">
       </div>
       <div class="poster__content">
         <router-link :to="'/movie/'+movie.id" :movieId="$route.params.id"><h3 class="poster__title">{{ movie.title }}</h3></router-link>
