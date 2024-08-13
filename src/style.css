@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.poster {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  transition: transform 1s, box-shadow 1s;
+}
+.poster__logo {
+  width: 168px;
+  height: auto;
+  background-color: #C4C4C4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster__content {
+  background-color: rgba(77, 71, 71, 0.9803921569);
+  width: 100%;
+  padding: 32px 32px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.poster__text {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  color: #988F8F;
+}
+.poster__actors {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #E5E5E5;
+}
+.poster__title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin-top: 4px;
+  color: #FFFFFF;
+}
+.poster__description {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 1000px;
+}
+.poster__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.poster__duration {
+  position: absolute;
+  top: 32px;
+  right: 0px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #C4C4C4;
+  padding: 9px 24px 9px 18px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+.poster__duration::before {
+  content: "";
+  width: 10px;
+  height: 110%;
+  background-color: rgba(77, 71, 71, 0.9803921569);
+  position: absolute;
+  rotate: 8deg;
+  top: 0px;
+  left: -5px;
+  transform: translate(0, -2px);
+}
+.poster__duration::after {
+  content: url("./img/theaters.svg");
+}
+.poster__hover:hover {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3490196078);
+  transform: translate(0, -8px);
+}/*# sourceMappingURL=style.css.map */
